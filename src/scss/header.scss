@@ -1,0 +1,33 @@
+.header {
+     padding-top: 35px;
+     padding-bottom: 35px;
+}
+
+.header__nav {
+     display: flex;
+     justify-content: space-between;
+
+     .header__nav__menu {
+          margin-top: 10px;
+
+          & ul {
+               display: flex;
+
+               & li:not(:first-child) {
+                    margin-left: 42px;
+               }
+          }
+
+          &__link {
+               & a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                         color: #F78434;
+                    }
+               }
+          }
+     }
+}
